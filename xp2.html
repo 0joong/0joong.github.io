@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="title-bar" id="title-bar">
+            <div class="title-bar-text">김영중의 홈페이지</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Restore"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        
+        <ul class="tree-view" id="treeview">
+            <li>Table of Contents</li>
+            <li>What is web development?</li>
+            <li>
+                CSS
+                <ul>
+                    <li>Selectors</li>
+                    <li>Specificity</li>
+                    <li>Properties</li>
+                </ul>
+            </li>
+            <li>
+                <details open>
+                    <summary>JavaScript</summary>
+                    <ul>
+                        <li>Avoid at all costs</li>
+                        <li>
+                            <details>
+                                <summary>Unless</summary>
+                                <ul>
+                                    <li>Avoid</li>
+                                    <li>
+                                        <details>
+                                            <summary>At</summary>
+                                            <ul>
+                                                <li>Avoid</li>
+                                                <li>At</li>
+                                                <li>All</li>
+                                                <li>Cost</li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>All</li>
+                                    <li>Cost</li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+            <li>HTML</li>
+            <li>Special Thanks</li>
+        </ul>
+        
+        <nav id="menu">
+            <div class="window-body">
+                <menu role="tablist">
+                    <li role="tab" aria-selected="true"><a href="#tabs">내 소개</a></li>
+                    <li role="tab"><a href="#tabs">내 정보</a></li>
+                    <li role="tab"><a href="#tabs">공부 현황</a></li>
+                    <li role="tab"><a href="#tabs">나와 관련된 주요 링크</a></li>
+                    <li role="tab"><a href="#tabs">주변 사람들의 링크</a></li>
+                    <li role="tab"><a href="#tabs">식물</a></li>
+                </menu>
+                <div class="window" role="tabpanel">
+                    <div class="window-body">
+                        <p>안녕</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="introduction">
+            <div class="window" style="width: 1080px">
+                <div class="title-bar">
+                    <div class="title-bar-text">Windows98</div>
+                </div>
+                <div class="window-body">
+                    <p>자기소개</p>
+                    <ul>
+                        <li>안녕하세요</li>
+                        <li>김영중의 홈페이지입니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="myinfo">
+            <div class="window" style="width: 1080px">
+                <div class="title-bar">
+                    <div class="title-bar-text">내 정보</div>
+                </div>
+                <div class="window-body">
+                    <ul>
+                        <li>이름 : 김영중</li>
+                        <li>전화번호 : 010 - 4*** - 7***</li>
+                        <li>학교 : 성남폴리텍</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="objective" class="window" style="width: 320px">
+            <div class="title-bar">
+                <div class="title-bar-text">목표</div>
+            </div>
+            <div class="window-body">
+                <p>다음과 같은 목표 설정:</p>
+                <ul>
+                    <li>자바의 정석 읽기</li>
+                    <li>c언어 배우기</li>
+                    <li>고수 키우기</li>
+                </ul>
+            </div>
+            <div class="status-bar">
+                <p class="status-bar-field">Press F1 for help</p>
+                <p class="status-bar-field">Slide 1</p>
+                <p class="status-bar-field">CPU Usage: 14%</p>
+            </div>
+        </div>
+        
+        <div id="study">
+            <div class="sunken-panel">
+                <table class='interactive'>
+                    <thead>
+                        <tr>
+                            <th>과목</th>
+                            <th>시간1</th>
+                            <th>시간2</th>
+                            <th>설명</th>
+                            <th>담당교수</th>
+                            <th>진도현황</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>기초통계</td>
+                            <td>월 09:00 ~ 11:50</td>
+                            <td></td>
+                            <td>R을 배웁니다.</td>
+                            <td>이효재</td>
+                            <td>프로젝트</td>
+                        </tr>
+                        <tr>
+                            <td>JAVA기초</td>
+                            <td>화 09:00 ~ 10:20</td>
+                            <td>수 10:30 ~ 11:50</td>
+                            <td>JAVA를 배웁니다.</td>
+                            <td>이혜정</td>
+                            <td>제네릭</td>
+                        </tr>
+                        <tr>
+                            <td>인터페이스 디자인</td>
+                            <td>화 10:35 ~ 11:50</td>
+                            <td>금 09:00 ~ 10:20</td>
+                            <td>인터페이스 디자인을 배웁니다.</td>
+                            <td>이혜정</td>
+                            <td>브라우저 객체 모델</td>
+                        </tr>
+                        <tr>
+                            <td>알고리즘</td>
+                            <td>수 09:00 ~ 10:20</td>
+                            <td>금 10:30 ~ 11:50</td>
+                            <td>알고리즘을 배웁니다.</td>
+                            <td>이혜정</td>
+                            <td>투 포인터</td>
+                        </tr>
+                        <tr>
+                            <td>발명과 창업</td>
+                            <td>수 12:50 ~ 14:40</td>
+                            <td></td>
+                            <td>발명과 창업을 배웁니다.</td>
+                            <td>이효재</td>
+                            <td>프로젝트</td>
+                        </tr>
+                        <tr>
+                            <td>영어</td>
+                            <td>수 14:50 ~ 16:40</td>
+                            <td></td>
+                            <td>영어를 배웁니다.</td>
+                            <td>조혜경</td>
+                            <td>영어</td>
+                        </tr>
+                        <tr>
+                            <td>컴퓨터 구조</td>
+                            <td>목 09:00 ~ 11:50</td>
+                            <td></td>
+                            <td>컴퓨터 구조를 배웁니다.</td>
+                            <td>김형오</td>
+                            <td>가상 메모리</td>
+                        </tr>
+                        <tr>
+                            <td>산업안전관리</td>
+                            <td>목 13:00 ~ 14:50</td>
+                            <td></td>
+                            <td>산업안전을 배웁니다.</td>
+                            <td>이현순</td>
+                            <td>보안</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div id="project">
+            <div class="sunken-panel">
+                <table class="interactive">
+                    <thead>
+                        <tr>
+                            <th>이름</th>
+                            <th>역할</th>
+                            <th>개인 홈페이지</th>
+                            <th>BOJ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>김태환</td>
+                            <td>프론트엔드 코드</td>
+                            <td><a href="https://aokushi.github.io/" target="_blank">https://aokushi.github.io/</a></td>
+                            <td><a href="https://www.acmicpc.net/user/rlaahrns022" target="_blank">https://www.acmicpc.net/user/rlaahrns022</a></td>
+                        </tr>
+                        <tr>
+                            <td>조시현</td>
+                            <td>프론트엔드 디자인</td>
+                            <td><a href="https://chosihyeon.github.io/" target="_blank">https://chosihyeon.github.io/</a></td>
+                            <td><a href="https://www.acmicpc.net/user/tlgus0312" target="_blank">https://www.acmicpc.net/user/tlgus0312</a></td>
+                        </tr>
+                        <tr>
+                            <td>이민수</td>
+                            <td>조장</td>
+                            <td><a href="https://minsoolee12345.github.io/" target="_blank">https://minsoolee12345.github.io/</a></td>
+                            <td><a href="https://www.acmicpc.net/user/minsoolee12345" target="_blank">https://www.acmicpc.net/user/minsoolee12345</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul>
+                <li><a href="https://www.acmicpc.net/user/0jung" target="_blank" title="링크임">나의 BOJ 현황</a></li>
+                <li><a href="https://github.com/0joong" target="_blank" title="링크임">나의 GitHub 현황</a></li>
+            </ul>
+        </div>
+        
+        <div id="time"></div>
+        
+        <div id="ownerbutton">
+            <button id="ownerButton">지금 영중씨는?</button>
+        </div>
+        
+        <input type="textarea" id="messagebox" placeholder="입력">
+        
+        <button id="sendButton">메시지 보내기</button>
+        
+        <div id="gosu">
+            <img src="../image/gosu.jpg" alt="Dinosaur">
+        </div>
+    </div>
+    
+    <script src="xps.js"></script>
+</body>
+</html>
